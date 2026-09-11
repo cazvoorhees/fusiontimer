@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fusiontimer</title>
+<meta name="description" content="Fusiontimer makes Time Tracker, an add-in that records real work time per design in Autodesk Fusion.">
+<style>
+:root { color-scheme: light; }
+body { margin: 0; font: 16px/1.55 "Segoe UI", system-ui, sans-serif; color: #1f2328; background: #f6f7f8; }
+header { background: #1f2328; color: #edf0f2; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 28px 22px; }
+header .wrap { display: flex; align-items: center; gap: 18px; padding-top: 22px; padding-bottom: 22px; }
+header img { width: 64px; height: 64px; border-radius: 14px; }
+header h1 { margin: 0; font-size: 26px; } header p { margin: 4px 0 0; color: #bdc5cf; }
+nav a { color: #8bc7b5; text-decoration: none; margin-right: 18px; }
+h2 { font-size: 21px; margin-top: 34px; } h3 { font-size: 17px; }
+.card { background: #fff; border: 1px solid #e1e4e8; border-radius: 12px; padding: 22px; margin-top: 18px; }
+.app { display: flex; gap: 22px; align-items: flex-start; }
+.app img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+ul { padding-left: 22px; } li { margin: 6px 0; }
+.button { display: inline-block; background: #32556f; color: #fff; padding: 10px 16px; border-radius: 8px; text-decoration: none; margin-top: 12px; }
+footer { color: #6b7684; font-size: 14px; padding: 30px 22px 40px; text-align: center; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="logo.png" alt="Fusiontimer logo">
+  <div><h1>Fusiontimer</h1><p>Small, quiet tools for Autodesk Fusion.</p>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a><a href="#support">Support</a></nav></div>
+</div></header>
+<main class="wrap">
+  <div class="card app">
+    <img src="time-tracker-icon.png" alt="Time Tracker icon">
+    <div>
+      <h2 style="margin-top:0">Time Tracker</h2>
+      <p>A small clock on the toolbar that records real work time per design: total time and mouse-moving time, per day, kept on your PC and carried between your computers inside the design.</p>
+      <a class="button" href="https://apps.autodesk.com/">Get it on the Autodesk App Store</a>
+    </div>
+  </div>
+  <h2>What it does</h2>
+  <ul>
+    <li>Counts active work in the foreground Fusion window, with a short thinking allowance after the last input that you can set from 30 seconds to 5 minutes.</li>
+    <li>Shows a second number, mouse moving: the seconds in which the pointer was actually moving. It is part of the total, never added to it.</li>
+    <li>Keeps a daily history per design, lets you add past work by hand, and exports everything as CSV.</li>
+    <li>Stores each computer's time inside the design itself as a small text note, written only when you save, so a second computer shows it too. Geometry, features and parameters are never touched.</li>
+    <li>Makes no network calls and has no account. Everything stays on your computer.</li>
+  </ul>
+  <h2>How to use it</h2>
+  <ol>
+    <li>Install from the Autodesk App Store and open Fusion. The clock appears at the top left, in the Quick Access Toolbar.</li>
+    <li>Hover over the clock to see the active design's hours. Click it for history, settings, past-time entries and export.</li>
+    <li>Save the design as usual; each save carries this computer's time with it.</li>
+  </ol>
+  <h2 id="support">Support</h2>
+  <div class="card">
+    <p>Email: <strong>(your support email)</strong>. Please include your Fusion version, your Windows version, and the status line from the Time Tracker details window. Replies usually within two business days.</p>
+    <p>Read the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</main>
+<footer>Fusiontimer. Autodesk and Fusion are trademarks of Autodesk, Inc. This site is not affiliated with Autodesk.</footer>
+</body>
+</html>
